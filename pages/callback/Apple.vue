@@ -5,7 +5,16 @@
 export default {
   mounted() {
     console.log('hello');
-    console.log(this.state);
+    this.AppleIDSignInOnSuccess();
+    this.AppleIDSignInOnFailure();
+  },
+  methods: {
+    AppleIDSignInOnSuccess(data) {
+      console.log(data);
+    },
+    AppleIDSignInOnFailure(err) {
+      console.log(err);
+    }
   }
 }
 </script>
