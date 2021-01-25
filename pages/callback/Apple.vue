@@ -5,8 +5,7 @@
 export default {
   mounted() {
     console.log('hello');
-      let init = AppleID.auth.init;
-      console.log(init);
+      
       let data = AppleID.auth.signIn();
       console.log(data);
   },
