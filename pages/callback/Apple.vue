@@ -6,7 +6,7 @@ export default {
   mounted() {
     console.log('hello');
     try{
-      let data = await AppleID.auth.signIn();
+      let data = AppleID.auth.signIn();
       this.AppleIDSignInOnSuccess(data);
     } catch (err) {
       this.AppleIDSignInOnFailure();
