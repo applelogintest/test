@@ -1,5 +1,8 @@
 <template>
-  <apple-login />
+  <div>
+    <apple-login />
+    <nuxt-link to="/callback/apple">callback page</nuxt-link>
+  </div>
 </template>
 
 <script>
