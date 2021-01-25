@@ -17,6 +17,7 @@ export default {
       scope: 'email',
       redirectURI: 'https://www.appplelogintest.ga/callback/apple',
       state: 'state',
+      response_mode : 'form_post',
     })
   },
   methods: {
