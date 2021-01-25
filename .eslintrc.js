@@ -9,9 +9,11 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
+    'eslint:recommended',
     'plugin:nuxt/recommended'
   ],
   plugins: [
+    "vue"
   ],
   // add your custom rules here
   rules: {}
