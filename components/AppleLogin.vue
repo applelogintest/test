@@ -15,9 +15,8 @@ export default {
     AppleID.auth.init({
       clientId: 'com.logintest.service',
       scope: 'email',
-      redirectURI: 'http://www.appplelogintest.ga/callback/apple',
+      redirectURI: 'http://www.appplelogintest.ga/callback/Apple',
       state: 'state',
-      response_mode : 'form_post',
     })
   },
   methods: {
