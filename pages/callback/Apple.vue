@@ -5,8 +5,12 @@
 export default {
   mounted() {
     console.log('hello');
-    this.AppleIDSignInOnSuccess();
-    this.AppleIDSignInOnFailure();
+    try{
+      let data = await AppleID.auth.signIn();
+      this.AppleIDSignInOnSuccess(data);
+    } catch (err) {
+      this.AppleIDSignInOnFailure();
+    }
   },
   methods: {
     AppleIDSignInOnSuccess(data) {
