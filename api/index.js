@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
 })
 
 module.exports = {
-  path: '/callback/apple/',
+  path: '/callback/apple',
   handler: app
 }
