@@ -15,8 +15,8 @@ export default {
   mounted() {
     window.AppleID.auth.init({
       clientId: 'com.logintest.service',
-      scope: 'email',
       redirectURI: 'https://www.appplelogintest.ga/callback/apple/',
+      scope: 'email',
       state: 'state',
       response_type: 'code id_token',
       response_mode: 'fragment',
