@@ -3,6 +3,7 @@
     id="appleid-signin"
     data-color="black"
     data-border="true"
+    data-type="sign in"
     class="custom-apple-btn"
     @click="test"
   />

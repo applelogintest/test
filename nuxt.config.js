@@ -52,5 +52,9 @@ export default {
   build: {
   },
   generate: {
-  }
+  },
+  serverMiddleware: [
+    // <project root>/api/index.js 모듈을 미들웨어로 추가
+    '~/api/index.js'
+  ]
 }
