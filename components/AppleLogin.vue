@@ -25,7 +25,6 @@ export default {
   methods: {
     test() {
       console.log('hello')
-      window.AppleID.auth.signIn()
     },
   },
 }

@@ -2,5 +2,10 @@
   <div />
 </template>
 <script>
-export default {}
+export default {
+  mounted() {
+    const data = window.AppleID.auth.signIn()
+    console.log(data)
+  },
+}
 </script>
