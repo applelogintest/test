@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
+    "apple-auth": "^1.0.7",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.2",
     "eslint-plugin-html": "^6.1.1",
+    "fs": "0.0.1-security",
     "nuxt": "^2.14.12",
     "vue-apple-signin": "^0.1.2"
   },
