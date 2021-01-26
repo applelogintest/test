@@ -11,22 +11,22 @@
 <script>
 export default {
   name: 'AppleLogin',
-  mounted () {
+  mounted() {
     window.AppleID.auth.init({
       clientId: 'com.logintest.service',
       scope: 'email',
       redirectURI: 'https://www.appplelogintest.ga/callback/apple/',
       state: 'state',
       response_type: 'code id_token',
-      response_mode: 'form_post'
+      response_mode: 'fragment',
     })
   },
   methods: {
-    test () {
+    test() {
       console.log('hello')
       window.AppleID.auth.signIn()
-    }
-  }
+    },
+  },
 }
 </script>
 <style scoped>

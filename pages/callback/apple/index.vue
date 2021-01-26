@@ -16,7 +16,6 @@ export default {
     // })
 
     // const data = window.AppleID.auth.signIn()
-    console.log(data)
   },
   methods: {
     AppleIDSignInOnSuccess(data) {
