@@ -1,7 +1,9 @@
 <template>
   <div>
     <apple-login />
-    <nuxt-link to="/callback/apple">callback page</nuxt-link>
+    <nuxt-link to="/callback/apple">
+      callback page
+    </nuxt-link>
   </div>
 </template>
 
@@ -10,7 +12,7 @@ import AppleLogin from '@/components/AppleLogin.vue'
 
 export default {
   components: {
-    AppleLogin: AppleLogin,
-  },
+    AppleLogin
+  }
 }
 </script>

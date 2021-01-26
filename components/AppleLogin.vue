@@ -1,10 +1,10 @@
 <template>
   <div
-    @click="test"
     id="appleid-signin"
     data-color="black"
     data-border="true"
     class="custom-apple-btn"
+    @click="test"
   />
 </template>
 
@@ -12,20 +12,20 @@
 export default {
   name: 'AppleLogin',
   mounted() {
-    AppleID.auth.init({
+    window.AppleID.auth.init({
       clientId: 'com.logintest.service',
       scope: 'email',
       redirectURI: 'https://www.appplelogintest.ga/callback/apple/',
       state: 'state',
       response_type: 'code',
-      response_mode: 'form_post'
+      response_mode: 'form_post',
     })
   },
   methods: {
     test() {
       console.log('hello')
-      AppleID.auth.signIn()
-    }
+      window.AppleID.auth.signIn()
+    },
   },
 }
 </script>
